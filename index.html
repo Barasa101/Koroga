@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pakatano</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0f;
+      color: white;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 100%;
+      padding: 25px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .nav-button {
+      text-decoration: none;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.08);
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #b7b7c2;
+      font-size: 19px;
+      line-height: 1.7;
+      max-width: 650px;
+      margin: 0 auto 35px;
+    }
+
+    .main-button {
+      display: inline-block;
+      background: white;
+      color: black;
+      text-decoration: none;
+      padding: 18px 38px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .main-button:hover {
+      transform: translateY(-3px);
+    }
+
+    .features {
+      width: 86%;
+      max-width: 1100px;
+      margin: 0 auto 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      background: #131319;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .feature-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .feature p {
+      color: #9696a2;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .cta {
+      width: 86%;
+      max-width: 1100px;
+      margin: 0 auto 80px;
+      background: white;
+      color: black;
+      border-radius: 25px;
+      padding: 55px 30px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #6f6f79;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        padding: 20px;
+      }
+
+      .hero {
+        min-height: 65vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">PAKATANO</div>
+
+    <a class="nav-button"
+       href="https://www.pakatano.com/">
+      Visit Site
+    </a>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="badge">
+        Welcome to Pakatano
+      </div>
+
+      <h1>
+        A Simple Way To Get Started
+      </h1>
+
+      <p>
+        Explore the platform and discover what Pakatano has to offer.
+        Use the button below when you are ready to continue.
+      </p>
+
+      <a class="main-button"
+         href="https://www.pakatano.com/">
+        Get Started
+      </a>
+
+    </div>
+
+  </section>
+
+  <section class="features">
+
+    <div class="feature">
+
+      <div class="feature-number">
+        1
+      </div>
+
+      <h3>Discover</h3>
+
+      <p>
+        Explore the platform and learn more about the available features
+        and services.
+      </p>
+
+    </div>
+
+    <div class="feature">
+
+      <div class="feature-number">
+        2
+      </div>
+
+      <h3>Continue</h3>
+
+      <p>
+        When you are ready, continue directly to the main Pakatano
+        website.
+      </p>
+
+    </div>
+
+    <div class="feature">
+
+      <div class="feature-number">
+        3
+      </div>
+
+      <h3>Get Started</h3>
+
+      <p>
+        Access the main platform through the Get Started button and
+        continue from there.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="cta">
+
+    <h2>Ready to continue?</h2>
+
+    <p>
+      Visit Pakatano to explore the full platform.
+    </p>
+
+    <a class="cta-button"
+       href="https://www.pakatano.com/">
+      Continue to Pakatano
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 Pakatano Landing Page
+  </footer>
+
+</body>
+</html>
